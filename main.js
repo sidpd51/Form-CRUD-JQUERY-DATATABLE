@@ -29,6 +29,8 @@ let msgAddress = document.getElementById('msgAddress')
 let msgDob = document.getElementById('msgDob')
 let msgGraduation = document.getElementById('msgGraduation')
 
+let table = new DataTable('#firstTable');
+
 createForm.addEventListener('click', () => {
     resetEducationRows();
     resetForm();

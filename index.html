@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FORM-CRUD</title>
+    <title>FORM-CRUD-JQUERY</title>
     <script src="https://kit.fontawesome.com/2604aff8b6.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdn.datatables.net/2.0.1/css/dataTables.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" defer></script>
+    <script src="//cdn.datatables.net/2.0.1/js/dataTables.min.js" defer></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <main class="main m-lg-5 mt-3">
         <header class="header d-flex justify-content-between align-items-center mb-4 mx-5">
-            <h3 class="heading fw-semibold mb-0">Multiple-User-Form</h3>
+            <h3 class="heading fw-semibold mb-0">MULTIPLE-USER-FORM</h3>
             <button id="create-form" type="button" class="btn btn-outline-primary btn" data-bs-toggle="modal" data-bs-target="#form">
                 Create User
             </button>
@@ -161,7 +163,7 @@
         </form>
 
         <div class="table-responsive mx-5">
-            <table class="table text-center">
+            <table id="firstTable" class="table text-center">
                 <thead>
                     <tr class="fw-semibold">
                         <th scope="col">#</th>
@@ -179,6 +181,7 @@
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
+                        <td>@mdo</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
@@ -201,7 +204,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-<script src="main.js"></script>
-
+    crossorigin="anonymous" defer></script>
+<script src="main.js" defer></script>
 </html>
